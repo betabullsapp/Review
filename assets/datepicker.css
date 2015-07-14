@@ -1,0 +1,12 @@
+/*=== Datepicker Stylesheet ===*/
+
+.datepicker .well-sm, .datepicker + .dropdown-menu {padding:5px; background-color: transparent;}
+.datepicker .btn, .datepicker + .dropdown-menu .btn {border-radius: 0; border-color: #cccccc; box-shadow:none;}
+.datepicker .btn.btn-info, .datepicker .btn.btn-danger, .datepicker .btn.btn-success,
+.datepicker + .dropdown-menu .btn.btn-info, .datepicker + .dropdown-menu .btn.btn-danger, .datepicker + .dropdown-menu .btn.btn-success {border-radius: 3px;}
+.datepicker .btn .text-info,
+.datepicker + .dropdown-menu .btn .text-info{color:#47afdd;}
+.datepicker th > .btn, .datepicker + .dropdown-menu th > .btn {border: 0; background-color: #ffffff;}
+.datepicker th > .btn[role='heading'], .datepicker + .dropdown-menu th > .btn[role='heading'] {font-size: 15px;}
+.datepicker th > .btn .glyphicon-chevron-left, .datepicker th > .btn .glyphicon-chevron-right,
+.datepicker + .dropdown-menu th > .btn .glyphicon-chevron-left, .datepicker + .dropdown-menu th > .btn .glyphicon-chevron-right{color: #bbbbbb; font-size: 13px;}

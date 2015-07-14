@@ -1,0 +1,1598 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+/** RESET **/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0 none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none outside none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+/** RESET END **//* Gutters */
+/* Left and Right borders */
+/* Alignment */
+/* Grid >> Global */
+/* Grid >> 12 Columns */
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10,
+.col11,
+.col12 {
+  position: relative;
+  float: left;
+}
+.col1,
+.container1 {
+  width: 58px;
+}
+.col2,
+.container2 {
+  width: 136px;
+}
+.col3,
+.container3 {
+  width: 214px;
+}
+.col4,
+.container4 {
+  width: 292px;
+}
+.col5,
+.container5 {
+  width: 370px;
+}
+.col6,
+.container6 {
+  width: 448px;
+}
+.col7,
+.container7 {
+  width: 526px;
+}
+.col8,
+.container8 {
+  width: 604px;
+}
+.col9,
+.container9 {
+  width: 682px;
+}
+.col10,
+.container10 {
+  width: 760px;
+}
+.col11,
+.container11 {
+  width: 838px;
+}
+.col12,
+.container12 {
+  width: 916px;
+}
+.full-grid {
+  margin-left: auto;
+  margin-right: auto;
+  width: 956px;
+  position: relative;
+  overflow: hidden;
+}
+.full-window {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* Suffix Extra Space >> 12 Columns */
+/*
+ * Group: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `group` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.group:before,
+.group:after {
+  display: table;
+  /* 2 */
+
+  content: " ";
+  /* 1 */
+
+}
+.group:after {
+  clear: both;
+}
+.lt-ie8 .group {
+  zoom: 1;
+}
+/* Border Radius */
+/** Icons **/
+@font-face {
+  font-family: 'rateabiz-icons';
+  src: url('/assets/icons/rateabiz-icons.eot');
+  src: url('/assets/icons/rateabiz-icons.eot?#iefix') format('embedded-opentype'), url('/assets/icons/rateabiz-icons.woff') format('woff'), url('/assets/icons/rateabiz-icons.ttf') format('truetype'), url('/assets/icons/rateabiz-icons.svg#SVGFont1Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*="icon-"],
+.default-icon {
+  font-family: 'rateabiz-icons' !important;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+/** GLOBAL **/
+body {
+  background: #ffffff !important;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+.link {
+  text-decoration: none;
+  color: #009999;
+}
+a:hover,
+.link:hover {
+  color: #008080;
+}
+.modal-trigger {
+  cursor: pointer;
+}
+input[type="submit"],
+button,
+.button {
+  /* mixin: border-radius */
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border: none;
+  padding: 8px 30px;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+input[type="submit"].large,
+button.large,
+.button.large {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 9px 45px;
+}
+input[type="submit"].primary,
+button.primary,
+.button.primary {
+  color: #ffffff;
+  background: #009999;
+}
+input[type="submit"].primary:hover,
+button.primary:hover,
+.button.primary:hover {
+  background: #008080;
+}
+.form-footer input[type="submit"] {
+  margin-top: 15px;
+}
+.rating-formfield .yv-formfield {
+  border: 0px;
+}
+.rating-formfield .field-wrapper {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/** GLOBAL END **/
+body {
+  background: #ffffff;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  color: #333333;
+}
+/** MAIN **/
+.header {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #333333;
+  color: #999999;
+  height: 60px;
+}
+.header .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 956px;
+  position: relative;
+  overflow: hidden;
+}
+.header .link {
+  color: #999999;
+}
+.header .link:hover {
+  color: #999999;
+}
+.header .logo-container {
+  position: relative;
+  float: left;
+}
+.header .logo-container .logo {
+  margin-top: 5px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  min-height: 800px;
+}
+.container .inner {
+  position: relative;
+  float: left;
+  width: 916px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.block {
+  margin-bottom: 25px;
+  position: relative;
+  float: left;
+  width: 916px;
+}
+.block > .heading {
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  margin-bottom: 0.6em;
+}
+/**=======  Notification Block  =======**/
+.notification-block.disabled {
+  display: none;
+}
+.notification-block .notification-container {
+  width: 100%;
+  border: 1px solid #cccccc;
+  /* mixin: border-radius */
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  padding: 12px;
+  position: relative;
+}
+.notification-block .notification-container .notification-inner {
+  padding-left: 36px;
+}
+.notification-block .notification-container .notification-heading {
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  margin-bottom: 0.5em;
+}
+.notification-block .notification-container .notification-body {
+  font-family: 'Merriweather', serif;
+}
+.notification-block .notification-container.Error {
+  background-color: #fcdddd;
+  border-color: #df3c04;
+}
+.notification-block .notification-container.Error:before {
+  font-family: 'rateabiz-icons' !important;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+  top: 12px;
+  left: 12px;
+  position: absolute;
+  font-size: 22px;
+  content: 'e';
+  color: #df3c04;
+}
+/**=======  Notification Block End =======**/
+/**=======  Homepage Hero Block  =======**/
+.hero-block {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  font-family: 'Merriweather', serif;
+  background: url("/assets/images/hero.jpg") no-repeat;
+  height: 330px;
+}
+.hero-block .heading {
+  font-size: 26px;
+}
+.hero-block .description-text {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.hero-block .hero-right {
+  float: right;
+  width: 375px;
+  height: 330px;
+}
+.hero-block .hero-right .body-text {
+  font-family: "Lucida Grande", sans-serif;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 24px;
+  margin: 32px 20px 0 48px;
+}
+.hero-block .hero-box {
+  background: #333333;
+  margin: 38px 26px 0 26px;
+  padding: 26px 23px 30px;
+  position: relative;
+}
+.hero-block .hero-box:after {
+  width: 0px;
+  height: 0px;
+  content: "";
+  border-style: solid;
+  border-width: 12px 8px 0 8px;
+  border-color: #333333 transparent transparent transparent;
+  position: absolute;
+  bottom: -12px;
+  left: 38px;
+}
+.hero-block .hero-box .heading {
+  line-height: 33px;
+  color: #ffffff;
+}
+/**=======  Homepage Hero Block End =======**/
+/**=======  Service Categories Block =======**/
+.service-category-block {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Merriweather', serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+.service-category-block .heading {
+  font-size: 26px;
+}
+.service-category-block .description-text {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.service-category-block .heading {
+  font-size: 14px;
+  text-align: center;
+  margin: 25px 0 25px;
+}
+.service-category-block .service-categories-item {
+  text-align: center;
+  height: 90px;
+}
+
+.service-category-block .service-categories-item .service-category-title {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 2em;
+  text-align: center;
+}
+/**=======  Service Categories Block End =======**/
+/**=======  Review Block =======**/
+.real-customer-block {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Merriweather', serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url("/assets/images/grid.jpg") repeat;
+}
+.real-customer-block .heading {
+  font-size: 26px;
+}
+.real-customer-block .description-text {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.real-customer-block .stacked-image {
+  margin-top: 10px;
+  background: url("/assets/images/reviews.png") center center no-repeat;
+  height: 216px;
+}
+.real-customer-block .real-customer-description {
+  color: #ffffff;
+  margin-top: 70px;
+}
+.real-customer-block .real-customer-description .heading {
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+/**=======  Review Block End =======**/
+/**=======  Customer Block =======**/
+.real-review-block {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  font-family: 'Merriweather', serif;
+  background: #ffffff;
+  color: #333333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.real-review-block .heading {
+  font-size: 26px;
+}
+.real-review-block .description-text {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.real-review-block .real-review-description {
+  margin-top: 90px;
+}
+.real-review-block .real-review-description .heading {
+  margin-bottom: 7px;
+}
+
+.real-review-block .stacked-image {
+  height: 246px;
+  background: url("/assets/images/review.png") center center no-repeat;
+  margin-top: 15px;
+  background-size: contain;
+}
+/**=======  Customer Block End =======**/
+/**=======  Segment Block =======**/
+.segment-block {
+  margin-bottom: 0;
+}
+.segment-block .alpha {
+  margin-right: 10px;
+}
+.segment-block .omega {
+  margin-left: 10px;
+}
+.segment-block .heading {
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  margin-bottom: 0.5em;
+}
+.segment-block .heading-2 {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 18px;
+}
+.segment-block .heading-3 {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.segment-block .deck {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+.segment-block .segments-list {
+  font-family: "Lucida Grande", sans-serif;
+}
+.segment-block .field-wrapper.search {
+  padding: 8px 7px 8px 20px;
+}
+.segment-block .field-wrapper.search:before {
+  line-height: 23px;
+}
+.segment-block .segments-list .list-item {
+  font-size: 13px;
+  margin-bottom: 0.4em;
+  line-height: 1.50em;
+}
+.segment-block .alpha-filters .list-item {
+  font-family: "Lucida Grande", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 1.50em;
+  margin-bottom: 0.4em;
+}
+.segment-block .alpha-filters .list-item > a {
+  text-decoration: none;
+}
+.segment-block .filter-item label {
+  margin: 7px 7px 7px 0;
+}
+.segment-block .filter-item .form-group {
+  float: left;
+  margin-left: 10px;
+}
+.segment-block .filter-item .field-wrapper.select {
+  width: 292px;
+}
+.segment-block .filter-item span.text {
+  margin: 9px 20px;
+  position: relative;
+  float: left;
+}
+.segment-block .pagination {
+  margin: 0 0;
+}
+.segment-block .listing.module .module-body .module-header {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.segment-block .listing.module .module-body .ratings-group {
+  margin-bottom: 5px;
+}
+.segment-block .listing.module .module-body .ratings-group .stars-rating {
+  margin-right: 5px;
+}
+.segment-block .listing.module .module-body .ratings-group .text {
+  line-height: 1.5em;
+  font-size: 13px;
+  font-style: italic;
+}
+.segment-block .listing.module .module-body .ratings-details .text {
+  line-height: 1.5em;
+}
+.segment-block.margin-top {
+  margin-top: 60px;
+}
+/**=======  Segment Block End =======**/
+/**=======  Business Info Block  =======**/
+.business-info-block {
+  margin-top: 30px;
+}
+.business-info-block > .heading {
+  font-weight: 700;
+  margin-bottom: 0.85em;
+  line-height: 1.25em;
+}
+.business-info-block .text {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 1.25em;
+  font-size: 16px;
+  line-height: 25px;
+}
+.business-info-block .business-info-container {
+  position: relative;
+  float: left;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+.business-info-block .business-info-container .business-contact-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+.business-info-block .business-info-container .button.new-review {
+  width: 176px;
+  text-align: center;
+}
+.business-info-block .business-info-container .business-contact-wrapper .map-link .map,
+.business-info-block .business-info-container .business-contact-wrapper .map-link .map-decorator {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.business-info-block .business-info-container .business-contact-wrapper .map-link .map-decorator {
+  width: 214px;
+  height: 130px;
+}
+.business-info-block .business-info-container .business-contact-wrapper .map-link:hover .map-decorator {
+  background: rgba(122, 153, 153, 0.25);
+}
+.lt-ie9 .business-info-block .business-info-container .business-contact-wrapper .map-link:hover .map-decorator {
+  border: 1px solid #009999;
+}
+.business-info-block .review-summary-container {
+  position: relative;
+  float: left;
+  min-height: 200px;
+  color: #fff;
+  text-shadow: 0.5px 0.7px 1px rgba(255, 255, 255, 0.5);
+  font-family: 'Merriweather', serif;
+}
+.business-info-block .review-summary-container .heading {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  color: #ffffff;
+}
+.business-info-block .review-summary-container [class^="icon-"],
+.business-info-block .review-summary-container [class*="icon-"] {
+  text-shadow: none;
+}
+.business-info-block .review-summary-container .summary-container {
+  float: left;
+  margin: 20px;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container {
+  background: #242524;
+  padding: 12px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  position: relative;
+  float: left;
+}
+.lt-ie8 .business-info-block .review-summary-container .summary-container .average-rating-container {
+  margin-right: 21px;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .heading {
+  margin-left: 3px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .average-rating {
+  float: left;
+  overflow: hidden;
+  margin-bottom: 3px;
+  font-size: 31px;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .average-rating .rating-item {
+  margin-right: 6px;
+  float: left;
+  display: block;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .average-rating .rating-item.last {
+  margin-right: 0;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .average-rating .icon-star {
+  display: inline-block;
+  color: #e6e6e6;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .average-rating .icon-star.on,
+.business-info-block .review-summary-container .summary-container .average-rating-container .average-rating .icon-star.half {
+  color: #ffcc33;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .average-rating .icon-star-bg {
+  position: relative;
+  color: #e6e6e6;
+  display: inline-block;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .average-rating .icon-star-bg .icon-star.half {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .no-review .icon-star {
+  color: #3e403e;
+}
+.business-info-block .review-summary-container .summary-container .average-rating-container .arrow-decorator {
+  position: absolute;
+  left: 26px;
+  bottom: -13px;
+  width: 14px;
+  height: 13px;
+  background: url("/assets/images/arrow-down-dark.png") no-repeat;
+}
+.business-info-block .review-summary-container .summary-container .recommendation-container {
+  float: left;
+  width: 149px;
+  margin-top: 10px;
+}
+.business-info-block .review-summary-container .summary-container .recommendation-container .heading.no-review {
+  margin-top: 25px;
+}
+.business-info-block .review-summary-container .summary-container .recommendation-container .rate {
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffcc33;
+  margin-bottom: 0.2em;
+}
+.business-info-block .review-summary-container .summary-container .recommendation-container .helper-text {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.25em;
+  margin-left: 4px;
+}
+.business-info-block .review-summary-container .rating-histogram-container {
+  float: left;
+  margin: 0 20px 20px;
+}
+.business-info-block .review-summary-container .rating-histogram-container .histogram-table {
+  width: 100%;
+  margin-top: 10px;
+  background: transparent;
+}
+.business-info-block .review-summary-container .rating-histogram-container .histogram-table .histogram-row {
+  height: 27px;
+}
+.business-info-block .review-summary-container .rating-histogram-container .histogram-table .histogram-row .histogram-cell {
+  vertical-align: top;
+}
+.business-info-block .review-summary-container .rating-histogram-container .stars-wrapper {
+  padding-right: 11px;
+  text-align: right;
+}
+.business-info-block .review-summary-container .rating-histogram-container .stars-wrapper .icon-stars {
+  line-height: 19px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #1E46E2;
+}
+.business-info-block .review-summary-container .rating-histogram-container .meter-bar-wrapper {
+  width: 100%;
+}
+.business-info-block .review-summary-container .rating-histogram-container .meter-bar-wrapper .meter-bar-background {
+  background: #e6e6e6;
+  height: 19px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.business-info-block .review-summary-container .rating-histogram-container .meter-bar-wrapper .meter-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  background: #009999;
+}
+.business-info-block .review-summary-container .rating-histogram-container .number-wrapper {
+  padding-left: 15px;
+  text-align: center;
+  line-height: 19px;
+  font-size: 13px;
+}
+.contact-modal {
+  width: 370px;
+}
+.contact-modal .status-message {
+  display: none;
+}
+.contact-modal .status-message .yo-modal-body {
+  min-height: 100px;
+}
+.contact-modal .status-message .yo-modal-body .message-text {
+  line-height: 1.5em;
+}
+.contact-modal .status-message .yo-modal-footer a.close-modal {
+  margin-right: 0;
+}
+.gplus-modal {
+  width: 526px;
+}
+.gplus-modal .status-message .yo-modal-body {
+  min-height: 100px;
+}
+.gplus-modal .status-message .yo-modal-body .message-text {
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+.gplus-modal .status-message .review-text {
+  min-height: 80px;
+  border: 2px solid #ccc;
+  padding: 10px 12px;
+  background-color: #EBEBEB;
+  margin: 19px;
+  margin-bottom: 26px;
+  font-style: italic;
+}
+.gplus-modal .status-message .review-text p {
+  padding-top: 5px;
+  line-height: 1.6em;
+}
+.gplus-modal .status-message .review-text h3 {
+  font-weight: bold;
+}
+.gplus-modal .status-message .yo-modal-footer a.close-modal {
+  margin-right: 0;
+}
+/**=======  Business Info Block End =======**/
+/**=======  Rrview Form Block  =======**/
+.review-form-block {
+  margin-bottom: 150px;
+}
+.review-form-block .heading {
+  font-weight: 700;
+}
+.review-form-block .formfield-group {
+  position: relative;
+  float: none;
+  margin: 10px 0;
+}
+.review-form-block .formfield-group .formfield-group-header {
+  border-bottom: 4px solid #ffe085;
+  margin-bottom: 30px;
+}
+.review-form-block .formfield-group .formfield-group-header .formfield-group-heading {
+  color: #595959;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+.review-form-block .formfield-group label,
+.review-form-block .formfield-group legend {
+  font-size: 16px;
+  color: #666666;
+}
+.review-form-block .formfield-group .formfield > label,
+.review-form-block .formfield-group .formfield > legend {
+  font-weight: 700;
+}
+.review-form-block .formfield-group .formfield > label.helper-text,
+.review-form-block .formfield-group .formfield > legend.helper-text {
+  font-size: 13px;
+  font-weight: normal;
+}
+.review-form-block .formfield-group .formfield {
+  position: relative;
+  float: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.review-form-block .formfield-group .formfield .review-field-wrapper textarea {
+  min-height: 75px;
+}
+.review-form-block .formfield-group .formfield .field-wrapper {
+  position: relative;
+}
+.review-form-block .formfield-group .formfield .name-field-wrapper {
+  position: relative;
+}
+.review-form-block .formfield-group .rating-field-wrapper {
+  border: none;
+  padding: 0;
+}
+.review-form-block .formfield-group .rating-field-wrapper .rating-selector {
+  padding: 10px 0px 10px 0px;
+  position: relative;
+}
+.review-form-block .formfield-group .rating-field-wrapper .rating-selector .rating-item {
+  display: inline-block;
+  background: url("/assets/images/ratings.png") no-repeat;
+  width: 45px;
+  height: 44px;
+  background-position: -45px 0;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.review-form-block .formfield-group .rating-field-wrapper .rating-selector .rating-item.selected {
+  background-position: 0 0;
+}
+.review-form-block .formfield-group .rating-field-wrapper .rating-selector .helper-text {
+  position: absolute;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 45px;
+}
+.review-form-block .formfield-group .rating-field-wrapper .rating-field {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.review-form-block .formfield-group .rating-selectior-fieldCaption {
+  width: 370px;
+}
+.review-form-block .formfield-group .review-helper-wrapper {
+  position: relative;
+  float: left;
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border: 2px solid #ff9900;
+}
+.lt-ie8 .review-form-block .formfield-group .review-helper-wrapper {
+  width: 342px;
+}
+.review-form-block .formfield-group .review-helper-wrapper .review-helper-header {
+  padding: 17px 12px;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ffa826;
+  color: #ffffff;
+}
+.review-form-block .formfield-group .review-helper-wrapper .review-helper-body {
+  padding: 9px 12px 0;
+}
+.review-form-block .formfield-group .review-helper-wrapper .review-helper-body .review-helper-list {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+.review-form-block .formfield-group .review-helper-wrapper .review-helper-body .review-helper-list .list-item {
+  font-size: 13px;
+  font-family: 'Merriweather', serif;
+  line-height: 1.25em;
+  margin-bottom: 0.9em;
+  line-height: 1.50em;
+}
+.review-form-block .formfield-group .radio-check-wrapper label {
+  font-size: 13px;
+  margin-right: 15px;
+}
+/**=======  Rrview Form Block End =======**/
+/**=======  Message Block =======**/
+.message-block {
+  border-top: 2px solid #ececec;
+  display: none;
+}
+.message-block .message-container {
+  text-align: center;
+  font-size: 16px;
+}
+.message-block .message-container .heading {
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.message-block .message-container .message {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+/**=======  Message Block End =======**/
+.footer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #333333;
+  color: #999999;
+  height: 40px;
+  line-height: 40px;
+}
+.footer .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 956px;
+  position: relative;
+  overflow: hidden;
+}
+.footer .link {
+  color: #999999;
+}
+.footer .link:hover {
+  color: #999999;
+}
+.footer .copyright-container {
+  position: relative;
+  float: left;
+  width: 448px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.footer .sitelinks-container {
+  position: relative;
+  float: left;
+  width: 448px;
+}
+.footer .sitelinks-container .sitelinks-list {
+  float: right;
+}
+.footer .sitelinks-container .sitelinks-list .list-item {
+  float: left;
+  margin-right: 15px;
+}
+.form-footer label {
+  color: #666666;
+  font-size: 13px;
+  font-family: "Lucida Grande", sans-serif;
+  line-height: 1.5em;
+}
+/**=======  Footer End =======**/
+/**=======  Zero-state Block=======**/
+.business-info-head {
+  position: relative;
+  float: left;
+  width: 916px;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 64px;
+}
+.business-info-head .business-info-deck {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+/**=======  Zero-state Block End =======**/
+/**=======  Review Summary Table =======**/
+.review-summary-block {
+  padding-top: 12px;
+}
+.user-review-table .user-review-col {
+  width: 195px;
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+.user-review-table .user-review-col .user-review .average-rating-container {
+  width: 150px;
+  position: relative;
+  float: right;
+}
+.lt-ie8 .user-review-table .user-review-col .user-review .average-rating-container {
+  margin-right: 21px;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .heading {
+  margin-left: 3px;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .rating-group {
+  float: right;
+  overflow: hidden;
+  margin-bottom: 8px;
+  font-size: 20px;
+  width: 100%;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .rating-group .rating-item {
+  margin-right: 11px;
+  float: left;
+  display: block;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .rating-group .rating-item:last-child {
+  margin-right: 0;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .rating-group .icon-star {
+  display: inline-block;
+  color: #e6e6e6;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .rating-group .icon-star.on,
+.user-review-table .user-review-col .user-review .average-rating-container .rating-group .icon-star.half {
+  color: #ffcc33;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .rating-group .icon-star-bg {
+  position: relative;
+  color: #e6e6e6;
+  display: inline-block;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .rating-group .icon-star-bg .icon-star.half {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .no-review .icon-star {
+  color: #3e403e;
+}
+.user-review-table .user-review-col .user-review .average-rating-container .arrow-decorator {
+  position: absolute;
+  left: 26px;
+  bottom: -13px;
+  width: 14px;
+  height: 13px;
+  background: url("/assets/images/arrow-down-dark.png") no-repeat;
+}
+.user-review-table .user-review-col .user-review-details {
+  text-align: right;
+  float: right;
+  font-family: 'Merriweather', serif;
+  line-height: 1.7em;
+}
+.user-review-table .user-review-col .user-review-details .review-recommended {
+  margin-bottom: 4px;
+}
+.user-review-table .user-review-col .user-review-details .review-date,
+.user-review-table .user-review-col .user-review-details .review-user {
+  font-weight: 300;
+}
+.user-review-table .user-review-summary-col {
+  width: 680px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+.user-review-table .user-review-summary-col .user-review-summary .heading {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.user-review-table .user-review-summary-col .user-review-summary .review-response {
+  background-color: #ffefc0;
+  margin-top: 20px;
+  padding: 12px;
+}
+.user-review-table .user-review-summary-col .user-review-summary .review-response .heading {
+  font-size: 12px;
+}
+.user-review-table .user-review-summary-col .user-review-summary .helper-text {
+  font-family: "Lucida Grande", sans-serif;
+  line-height: 1.5em;
+  display: inline;
+}
+.user-review-table .user-review-summary-col .user-review-summary .review-body .link {
+  display: inline;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.user-review-table .user-review-summary-col .user-review-summary .review-body .link:hover {
+  text-decoration: underline;
+}
+.user-review-table .user-review-summary-col .user-review-summary .more-content {
+  display: none;
+}
+.user-review-table .user-review-summary-col .user-review-summary .accordion-block {
+  position: relative;
+  overflow: visible;
+  height: auto;
+}
+.review-row {
+  background: #ffffff;
+}
+.user-review-table .user-review-summary-col {
+  padding-top: 15px;
+}
+.table-filters .yv-formfield {
+  float: none;
+}
+.pagination-sm > li > a {
+  border-radius: 0px !important;
+  color: #009999;
+  background: white;
+}
+.table-filters {
+  border: 0px;
+}
+.table-filters .filter-item .form-group .yv-formfield {
+  width: 200px;
+  border-radius: 0px;
+}
+.field-wrapper.select:after {
+  color: #009999;
+  background: white;
+}
+.table > tbody > tr > td {
+  border: 0px;
+}
+.field-wrapper.search:before {
+  font-family: 'yo-icons' !important;
+  left: 5px;
+  top: 2px;
+}
+#table-search {
+  text-indent: 4px;
+}
+body > .inner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  width: 956px;
+}
+
+
+
+/*  Chris CSS */
+
+.block {
+  width: 100%;
+}
+
+.business-info-block .review-summary-container .bg-color-wrapper {
+  background: #1C5DA8;
+  overflow: auto;
+}
+
+.business-info-container .business-map-container {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#new-review-form .yv-formfield {
+  float: none;
+}
+
+#new-review-form .review-formfield .yv-formfield {
+  width: 49%;
+  float: left;
+}
+
+#new-review-form .review-formfield .review-helper-wrapper {
+  width: 49%;
+  float: left;
+  margin-left: 2%;
+}
+
+#new-review-form .radio-check-wrapper .yv-formfield {
+  float: left;
+}
+
+.footer {
+  height: auto;
+  line-height: 1em;
+}
+
+.footer .rab-container {
+  min-height: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer .sitelinks-container {
+  width: auto;
+  float: right;
+}
+
+.footer .sitelinks-list .list-item:last-child {
+  margin-right: 0px;
+} 
+
+.footer .copyright-container {
+  width: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.segment-list-container {
+  padding: 15px 0px 15px 0px;
+}
+
+.segment-list-container li {
+  margin-bottom: 5px;
+}
+
+.segment-list-container li:last-child {
+  margin-bottom: 0px;
+}
+
+.call-button {
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+
+  .hero-block {
+      background: url("/assets/images/hero-mobile.jpg") center center no-repeat;
+      background-size: cover;
+  }
+
+  .hero-block .hero-right {
+    float: none;
+    width: auto;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-block:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(26, 148, 150, 0.7);
+  }
+
+  .hero-block .hero-box {
+    margin: 0px;
+    background: transparent;
+    padding: 75px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .hero-block .hero-box:after {
+    display: none;
+  }
+
+  .hero-block .hero-right .body-text {
+    margin: 0px;
+    padding: 30px 0px 0px 0px;
+    line-height: 1.6em;
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .segment-list-container {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .segment-list-container li {
+    margin-bottom: 30px;
+  }
+
+  .segment-block.margin-top {
+    margin-top: 30px;
+  }
+
+  .pager-container .filter-item {
+    float: left;
+  }
+  .pager-container .filter-item span.text {
+    margin-left: 0px;
+  }
+
+  .segment-block .filter-item .field-wrapper.select {
+    width: 190px;
+  }
+
+  .business-info-block .business-info-container .button.new-review {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .business-info-block .review-summary-container .summary-container .recommendation-container {
+    width: auto;
+  }
+
+  #contact-modal {
+    width: 100% !important;
+  }
+
+  .review-summary-block #table-filters .filter-item {
+    float: none;
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+  }
+
+  .user-review-table .user-review-col {
+    width: auto;
+    padding-bottom: 8px;
+    padding-top: 20px;
+    display: block;
+    overflow: auto;
+  }
+
+  .user-review-table .user-review-summary-col {
+    width: auto;
+    display: block;
+    padding: 8px 10px;
+    padding-bottom: 20px;
+  }
+
+  .user-review-table .user-review-col .user-review .average-rating-container {
+    width: auto;
+    float: left;
+  }
+
+  .user-review-table .user-review-col .user-review .average-rating-container .rating-group {
+    margin-bottom: 0px;
+    margin-right: 20px;
+    float: left;
+  }
+
+  .user-review-table .user-review-col .user-review-details {
+    text-align: left;
+    float: left;
+  }
+
+  #review-table tbody tr {
+    border-bottom: solid 1px #dedede;
+  }
+
+  #new-review-form .review-formfield .yv-formfield {
+    width: 100%;
+  }
+
+  #new-review-form .review-formfield .review-helper-wrapper {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+  }
+
+  #new-review-form .form-footer input[type="submit"] {
+    width: 100%;
+  }
+
+  #new-review-form .radio-check-wrapper label {
+    width: 85%;
+  }
+
+  #new-review-form .radio-check-wrapper .yv-formfield {
+    float: right;
+  }
+
+  .review-form-block .formfield-group .rating-field-wrapper .rating-selector .helper-text {
+    line-height: 1em;
+    display: block;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .footer .rab-container {
+    text-align: center;
+  }
+
+  .footer .sitelinks-container {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+
+  .footer .sitelinks-container .sitelinks-list {
+    float: left;
+    width: 100%;
+  }
+
+  .footer .sitelinks-container .sitelinks-list .list-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer .sitelinks-container .sitelinks-list .list-item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .footer .copyright-container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .call-button {
+    display: block;
+  }
+
+  .real-customer-block .real-customer-description {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .real-review-block .real-review-description {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+}

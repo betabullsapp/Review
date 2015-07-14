@@ -1,0 +1,5 @@
+.loading-state-default {position:relative; min-height:40px;  background:#dfdfdf; opacity:.8}
+	.loading-state-default:before {position: absolute; left:0; width:100%; height:100%; content:''; top:0; background:#fff; opacity: .8;}
+	.loading-state-default:after {position: absolute; left:0; width:100%; height:100%; content:''; top:0; background:no-repeat scroll center; background-image:url("../images/load.gif");}
+
+	.loading-state-default.small:after {background-image:url("../images/load_small.gif");}

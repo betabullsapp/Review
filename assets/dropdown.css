@@ -1,0 +1,19 @@
+/*Dropdown*/
+.dropdown {position: relative; display: inline-block; vertical-align: middle; max-width: 100%;}
+
+.dropdown .dropdown-toggle {position: relative; line-height: 18px; max-width: 100%; min-height: 30px; padding-right: 24px;}
+	.dropdown .dropdown-toggle.ellipsis {display: block; overflow: hidden; white-space:nowrap; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; -webkit-text-overflow:ellipsis; text-overflow:ellipsis;}
+
+.dropdown .dropdown-toggle .toggle-text { margin-right: 3px;}
+	.dropdown .dropdown-toggle .toggle-text .yo-icon-gear { font-size: 12px;}
+	.dropdown .dropdown-toggle .yo-icon-arrow-down {position: absolute; top: 3px; right: 12px; }
+
+/*Dropdown Menu*/
+.dropdown .dropdown-menu {display: none; margin: 0; position: absolute; min-width: 100%; top: 30px; left: 0; border: 1px solid #c8c8c8; background: #fff; border-radius: 0 0 3px 3px; -moz-border-radius: 0 0 3px 3px; -webkit-border-radius: 0 0 3px 3px; overflow: hidden; z-index: 2;}
+	.dropdown .dropdown-menu > li {list-style: none; margin: 0; padding: 0;}
+
+		.dropdown .dropdown-menu > li > a {display: block; font-size: 12px; line-height: 1.25em; padding: 7px 10px; color: #636363; text-decoration: none;}
+		.dropdown .dropdown-menu > li > a:hover {background-color: #edf7fd;}
+
+	.dropdown.open .dropdown-menu{display: block;}
+	.dropdown-toggle.right + .dropdown-menu { right: 0; left: auto;}

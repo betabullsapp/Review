@@ -1,0 +1,5 @@
+.stars-rating {font-family: 'yo-icons'; font-size: 15px; position: relative; float:left; letter-spacing: 1px; z-index:1;}
+    .stars-rating .stars-filled {width: 0%; overflow: hidden; position: absolute; top:0; left:0; color:#ffcc33; }
+    .stars-rating .stars-empty {color:#bcbcbc;}
+	.stars-rating.small {font-size:10px;}
+	.stars-rating.filled {color:#ffcc33;}

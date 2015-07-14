@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* Tabs */
+.tabs {margin-bottom:12px;}
+
+.tabs.vertical {position: relative; overflow: hidden; background:#F3F3F3; border:1px solid #CCCCCC;} /* EFEFEF */
+	.tab-navigation li {list-style: none;}
+    .tab-navigation li a { -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+
+
+	/* === Vertical Tabs === */
+	.tabs.vertical .tab-navigation ul {height:100%; width:100%; border:0; }
+	.tabs.vertical > .tab-navigation {min-height:100%; z-index:5; position: absolute; left:0; border-right:1px solid #ccc; padding-left:0; padding-right:0;}
+        .tabs.vertical > .tab-navigation, .tabs.vertical .tab-navigation ul {background:#F3F3F3;}
+        .tabs.vertical > .tab-navigation ul {margin:0; border-bottom:0;}
+        .tabs.vertical > .tab-navigation ul.main {position: relative; z-index: 5;}
+        .tabs.vertical > .tab-navigation ul.sub {position: absolute; top: 0; left: 0; z-index: -1; opacity: 0;}
+        
+        .tabs.vertical > .tab-navigation .optionListItems { position: absolute; left: 0; height: 100%; }
+        .tabs.vertical > .tab-navigation li { margin: 0; }
+            .tabs.vertical > .tab-navigation li a { color: #464646; font-weight:bold; background: #fcfcfc; padding: 15px 35px 15px 15px; font-size: 12px; text-decoration: none; display: block; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; margin-right: -1px; position: relative;}
+            .tabs.vertical > .tab-navigation li a:after { content: '>'; font-family: 'yo-icons'; font-size:12px; line-height:1; position: absolute; right: 10px; color:#464646; top:38%; }
+            .tabs.vertical > .tab-navigation li a:hover { background: #F1F7F9; }
+        .tabs.vertical > .tab-navigation li.active > a { background: #EFEFEF; border-right:1px solid #EFEFEF; }
+            .tabs.vertical > .tab-navigation li.active > a:after { opacity: 0; }
+
+
+    .tabs.vertical.large-counter > .tab-navigation li > a {font-size: 14px; position: relative; background: #efefef; line-height: 1em;}
+    .tabs.vertical.large-counter > .tab-navigation li > a:after {font-family: "Arial"; font-weight: bold; font-size: 34px; left:10px; right: inherit; bottom: 0px; top: inherit; margin-bottom: 15px;}
+    .tabs.vertical.large-counter > .tab-navigation li.active > a {background: #fff;}
+    .tabs.vertical.large-counter > .tab-navigation li.active > a:after {opacity: 1;}
+    	.tabs.vertical.large-counter > .tab-navigation li a {padding-bottom: 60px;}
+    .tabs.vertical.large-counter .tab-navigation li a[data-counter]:after {background: none; padding: 0px;}
+
+    .tabs.vertical.large-counter > .tab-navigation li.active > a {border-right-color: #fff;}
+    .tabs.vertical.large-counter > .tab-content {background: #fff;}
+
+    .tabs.vertical.large-counter > .tab-navigation li a:hover { background: #F1F7F9; }
+    .tabs.vertical.large-counter > .tab-navigation li.active a:hover { background: #fff;}
+
+
+
+
+        /* Tab Content */
+        .tabs.vertical > .tab-content  {position: relative; z-index: 4; padding-top:15px; margin-right:-1px; background:#EFEFEF; padding-left:20px;}
+		    .tabs.vertical > .tab-content > .tab-content-item {position: relative; margin-bottom:15px; padding-right:10px;}
+
+
+	/* === Horizontal Tabs === */
+	.tabs.horizontal {clear:both;}
+
+		/* Tab Content */
+		.tabs.horizontal > .tab-content {position: relative; border-top:1px solid #ccc; margin-top:-1px; z-index: 1; padding-top:10px;}
+		    .tabs.horizontal > .tab-content > .tab-content-item {position: relative; margin-bottom:20px;}
+
+	.tabs.horizontal > .tab-navigation {overflow: hidden; position: relative; z-index: 2;}
+		/*.tabs.horizontal > .tab-navigation ul {margin:0;}*/
+		.tabs.horizontal > .tab-navigation li {float:left; margin:0;}
+			.tabs.horizontal > .tab-navigation li a:after {content:'';}
+
+			.tabs.horizontal > .tab-navigation li a {color: #464646; padding:7px 15px; font-size: 13px; text-decoration: none; display: block; position: relative; margin-right:-1px; border-color:transparent; border-top-right-radius: 3px; border-top-left-radius: 3px; background: #f3f3f3; border: 1px solid #ccc; text-shadow:0 1px 1px #eee; text-shadow:0 1px 1px rgba(255,255,255,.8); -moz-text-shadow:0 1px 1px #eee; text-shadow:0 1px 1px rgba(255,255,255,.8); -webkit-text-shadow:0 1px 1px #eee; text-shadow:0 1px 1px rgba(255,255,255,.8); font-weight:bold; text-align: center; display:block; position: relative; vertical-align:middle;-webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; -ms-transition: all 0.1s ease-in; -o-transition: all 0.1s ease-in; transition: all 0.1s ease-in; box-shadow:0 1px 1px rgba(255,255,255,.5) inset; -moz-box-shadow:0 1px 1px rgba(255,255,255,.5) inset; -webkit-box-shadow:0 1px 1px rgba(255,255,255,.5) inset;}
+			.tabs.horizontal > .tab-navigation li a:hover {background:#efeff0;}
+
+			.tabs.horizontal > .tab-navigation li.active > a {background: #F8F8F8; border: 1px solid #ccc; border-bottom-color: #F8F8F8; }
+
+	/* === Disabled Tabs === */
+	.tabs.horizontal .tab-navigation li.disabled a,
+	.tabs-horizontal .tab-navigation li.disabled a:hover {color:#ccc!important; background:#f3f3f3; cursor: default;}
+
+	/* === Enclosed Tabs === */
+	.tabs.enclosed {}
+		.tabs.enclosed > pre {border:0; padding:0; background:none;} /* NEED TO FIND A BETTER SOLUTION */
+
+		.tabs.enclosed > .tab-content  {position: relative; border:1px solid #ccc; margin-top:-1px; z-index: 1; background: #e6e7e8; padding: 15px; }
+		.tabs.enclosed > .tab-content > .tab-content-item {margin-bottom:0;}
+		.tabs.enclosed > .tab-navigation ul {margin:0;}
+		.tabs.enclosed > .tab-navigation li.active > a {background: #e6e7e8; border-bottom-color: #e6e7e8;}
+
+	/* === Counter === */
+	.tabs .tab-navigation li a[data-counter]:after {content:attr(data-counter); background:#ddd; border-radius: 3px; margin-left:5px; padding:2px 4px; text-align: center; text-shadow:none;}

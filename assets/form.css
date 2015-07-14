@@ -1,0 +1,162 @@
+/*=== Forms & formfields ===*/
+/*form label,
+form fieldset legend {line-height:1.5em; font-weight:bold; margin-left:1px; color:#636363; display:block;}*/
+form label.inField {position: absolute; cursor: text; color:#8e8e8e; padding:12px 9px 2px; z-index:5}
+	form .textarea label.inField { padding:10px 8px}
+input, textarea, select, .field-wrapper {border-radius: 3px; background:#fff; position: relative; -moz-border-radius: 3px; -webkit-border-radius: 3px; border:1px solid #c8c8c8; box-shadow: 0 0 5px rgba(0,0,0,.1) inset; -moz-box-shadow: 0 0 5px rgba(0,0,0,.1) inset; -webkit-box-shadow: 0 0 5px rgba(0,0,0,.1) inset; padding:8px 7px 2px; outline:none; color:#636363;}
+
+select,  
+input, 
+textarea, 
+label, 
+fieldset legend {font-size: 12px;}
+.form-group label {margin-bottom:0;}
+
+/*=== Help-Blocks ===*/
+.form-group .help-block {font-size:11px; margin:0; line-height: 1.2; font-style: italic; margin-bottom: 4px; color:#898989; margin-left:1px;}
+
+	textarea {min-height:100px; resize:none;}
+	textarea.autosize {overflow:hidden;} /* Keeps textarea scroll from appearing on autosize textarea fields */
+
+
+/*=== Radio/Checkbox Fields ===*/
+.radioCheckbox .radio:first-child, 
+.radioCheckbox .checkbox:first-child {margin-top:0;}
+
+/*.radioCheckbox .radio:last-child,
+.radioCheckbox .checkbox:last-child {margin-bottom:0;}*/
+
+
+/*=== Select Fields ===*/
+.field-wrapper input, .field-wrapper textarea {width: 100%; margin: 0; padding: 0; border: 0; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; border:0;}
+.field-wrapper.select select {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity:0; -webkit-appearance:none; height:100%; padding:3px 0; margin:0; width:100%; position: absolute; left:0; top:0; z-index: 1;}
+	.field-wrapper.select select option {padding:3px 10px; color:#888;}
+	.field-wrapper.select {padding:0; position:relative; min-height:29px; font-size:11px; font-weight:bold; overflow: hidden; background:#EBEBEB; box-shadow: 0 0 2px #fff inset; -moz-box-shadow: 0 0 2px #fff inset; -webkit-box-shadow: 0 0 2px #fff inset; border:1px solid #c8c8c8; box-sizing: content-box; -moz-box-sizing: content-box; -ms-box-sizing: content-box; -webkit-box-sizing: content-box; }
+	.field-wrapper.select:after {content:'v'; font-family: 'yo-icons'; font-weight: normal; position: absolute; right:0; line-height: 24px; z-index: 0; font-size:12px; padding:0 7px 0 8px; background:#dfdfdf; border-left:1px solid #c8c8c8; height:100%;} 
+		.field-wrapper .select-option { position: absolute; font-weight:normal; text-overflow:ellipsis; white-space:nowrap; z-index: 0; left:10px; line-height:30px; max-width: 68%; overflow: hidden; }
+
+	.field-wrapper.select.focus:after {background-color:#ccc;}
+
+	.field-wrapper.select.disabled {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; filter: alpha(opacity=30); -moz-opacity: .3; -khtml-opacity: .3; opacity: .3; }
+
+/*=== File Upload Fields ===*/
+.file-upload {position: relative;}
+
+	/* Input - File Upload */
+	.file-upload.input {padding-right:95px; border:0;}
+	.file-upload.input .field-wrapper {width:100%; cursor: pointer;}
+	.file-upload.input .field-wrapper input {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity:0; -webkit-appearance:none; visibility: hidden; cursor: pointer;}
+	.file-upload.input button {float:right; position: absolute; right:0; top:0; height:32px;}
+	.file-upload.input .filename { position: absolute; bottom:0; font-size: 12px; text-overflow:ellipsis; white-space:nowrap; z-index: 5; left:10px; line-height:30px; max-width: 100%; padding-right:15px; overflow: hidden; }
+
+
+	/* Button - File Upload */
+	.file-upload.button {width:100%;}
+		.file-upload.button .yv-formfield {display: none;}
+
+	.file-upload.invalid {background:none;}
+	.file-upload.invalid .field-wrapper {border-color:#C63232; background-color:#FDE7E4;}
+
+/*=== Search Input Fields ===*/
+.field-wrapper.search {padding:5px 10px 4px 20px;}
+.field-wrapper.search:before {position: absolute; font-weight:normal; left:5px; content:'m'; display: block; font-family: 'yo-icons'; line-height:20px; color:#CBCBCB;}
+
+
+/*=== Form Footer */
+.form-footer { padding: 10px 0;}
+.form-footer.text-right {text-align: right;}
+	.form-footer a.link {font-size:13px; line-height:35px; margin-right:12px; margin-left: 12px;}
+
+	.form-footer.small a {font-size:11px; line-height:25px; font-weight: normal; font-style: normal;}
+
+
+/*=== Validator Essentials ===*/
+
+/* Smooth CSS3 Transitions */
+.field-wrapper,
+.field-wrapper:after,
+.yv-formfield,
+.yv-formfield .fieldCaption,
+.checkbox,
+.radio {-webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; transition: all 0.2s ease-in;}
+
+/* Form Field Style */
+.yv-formfield {position: relative; background-color: #efeff0; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; display:block; border:1px solid #c8c8c8;}
+.yv-formfield.showMessage {padding-bottom:25px;}
+	.yv-formfield .field-wrapper {border:none; border-bottom:1px solid #c8c8c8; margin-bottom:-1px;}
+		.yv-formfield .field-wrapper,
+		.yv-formfield input, 
+		.yv-formfield textarea, 
+		.yv-formfield select {position:relative; /*z-index: 5*/}
+
+/* Focus */
+.field-wrapper.focus,
+.field-wrapper.focus:after,
+.yv-formfield.focus,
+.yv-formfield.focus > .field-wrapper {border-color:#777;}
+
+/* Radio Checkbox field */
+.yv-formfield.radioCheckbox,
+.yv-formfield.radioCheckbox.valid,
+.yv-formfield.radioCheckbox.focus:not(.invalid) {border:1px solid transparent; background:none;}
+	.yv-formfield .fieldCaption {position: absolute; bottom:2px; left:0; padding:0 5px; z-index: 4; font-size: 11px; font-weight:normal; opacity:0; visibility: hidden;}
+		.yv-formfield.showMessage .fieldCaption {opacity: 1; visibility: visible;}
+
+		/* IE8 Override */
+			.ie8 .yv-formfield.radioCheckbox,
+			.ie8 .yv-formfield.radioCheckbox.valid {background:none; border-width:0; margin:1px; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000); zoom: 1;}
+			.ie8 .yv-formfield.radioCheckbox.invalid {border-width: 1px; margin:0; background-color:#FDE7E4;}
+
+/* Progressive Disclosure */
+.radio > label + div,
+.checkbox > label + div {padding-top:2px;}
+	.radio > label + .row:last-child .form-group,
+	.checkbox > label + .row:last-child .form-group {margin-bottom:2px;}
+
+.form-group > label {font-weight:700;}
+
+/* HelpTip */
+	.yv-formfield .helpTip {background-image:url(helpTip.png); position: absolute; top:4px; right:4px; width:12px; height:12px;  z-index: 4;}
+		.yv-formfield .helpTip .helpTipContent {z-index:20; color:#4D4D4F; position:absolute; top:0; left:0; font-size:11px; padding:10px 12px; width:110px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; border:1px solid #8F8F8F; line-height:15px; box-shadow:0 0 6px #b8b8b8; -moz-box-shadow:0 0 6px #b8b8b8; -webkit-box-shadow:0 0 6px #b8b8b8; display:none; 
+			background: -moz-linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0; 
+			background: -webkit-linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0;
+			background: -ms-linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0;
+			background: -o-linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0;
+			background: linear-gradient(#F8F8F8,#EFEFF0), #EFEFF0;
+			background-color: #EFEFF0;
+		}
+		.yv-formfield .helpTip-pointer {background-image:url(helpTip-pointer.png); display:block; width:14px; height:14px; position:absolute; right:14px; bottom:-12px;}
+
+/* Invalid */
+.yv-formfield.invalid {border-color:#C63232; background-color:#FDE7E4;}
+.yv-formfield.invalid .fieldCaption {color:#C63232;}
+	.yv-formfield.invalid input, 
+	.yv-formfield.invalid textarea, 
+	.yv-formfield.invalid select, 
+	.yv-formfield.invalid .field-wrapper {border-color:#C63232}
+
+	.yv-formfield.radioCheckbox.invalid {padding-left:5px; padding-top:5px;}
+
+/* Valid */
+.yv-formfield.valid {border-color:#7bb111; box-shadow-color:#7bb111; -moz-box-shadow-color:#7bb111; -webkit-box-shadow-color:#7bb111;}
+	.yv-formfield.valid input, 
+	.yv-formfield.valid textarea, 
+	.yv-formfield.valid select, 
+	.yv-formfield.valid .field-wrapper {border-color:#7bb111}
+
+/* Disabled */
+.yv-formfield.disabled, 
+.checkbox[disabled], 
+.radio[disabled] {opacity: .4;}
+
+.checkbox[disabled], 
+.radio[disabled]
+.yv-formfield.disabled *,
+.checkbox[disabled] *,
+.radio[disabled] * {cursor: not-allowed;}
+
+/* Required Fields */
+.yv-required-field {margin-left:3px;}
+
+
+/*=== END VALIDATOR ESSENTIALS ===*/

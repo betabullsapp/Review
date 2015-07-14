@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*== Standard Typography Set [See = http://www.alistapart.com/articles/howtosizetextincss ]==*/
+/*body { font-family: "Arial", sans-serif;  font-size: 10px; color:#636363; background:#f3f3f3; }*/
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5 { font-weight: bold; }	
+
+/*== Custom Classes & Default Settings. ==*/
+	
+	input {outline:none;}
+		
+	hr { border: none; border-top: 1px solid #dedede; clear: both; margin: 10px 0; }	
+	
+	a {color:#0077CC; text-decoration:none; cursor:pointer; }
+	a:hover {color:#005c9d; text-decoration:underline; cursor:pointer; }
+	a:active {color:#0077CC; }
+
+	em {font-style:italic;}
+
+	.float-left {float:left;}
+	.center {float:none; margin-left:auto; margin-right:auto;}
+	.float-right {float:right;}
+
+	.text-align-left {text-align: left}
+	.text-align-center {text-align: center;}
+	.text-align-right {text-align: right;}
+
+
+	/* Code Snippets */
+	pre {white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; background: #ebebeb; border:1px solid #d8d8d8;}
+
+
+/*=== Main Header ===*/
+header.main {margin-bottom:25px;}
+	header.main h1 {margin-bottom:8px;}
+	header.main *:last-child {margin-bottom:0;}
+
+/*== Standard Footer ==*/
+footer.main { margin-bottom:20px; font-size:11px; overflow: hidden; width:100%; text-align: center; padding: 20px 0px 30px 0px; position: absolute; margin: 0; bottom: 0; }
+
+/* Helper Classes */
+.disabled-section {position: relative; opacity: .3; overflow: hidden;}
+	.disabled-section:after {content: ""; height:100%; position: absolute; left:0; top:0; width:100%; z-index: 100;}
+
+
+	/**==== Media Queries ==== **/
+	/* All Mobile Sizes (devices and browser) */
+
+	@media screen and (min-width: 481px){
+	   footer.main .hidden-desktop {
+	    display: none;
+	  }
+	}
+	
+body {
+    display:block!important
+}
