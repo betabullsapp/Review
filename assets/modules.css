@@ -1,0 +1,15 @@
+/* General header with Underline */
+.module { margin-bottom: 30px; }
+.module > .module-header { position: relative; margin-bottom: 10px; }
+	.module > .module-header .heading { display: inline-block; line-height: 1em; }
+	.module > .module-header .actions { position: absolute; line-height: 1em; }
+		.module > .module-header .actions .btn { margin-bottom: -5px; }
+
+
+.module.module-primary > .module-header { border-bottom: 1px solid #e3e3e3; }
+	.module.module-primary > .module-header .heading { margin: 10px 5px 10px 0; }
+	.module.module-primary > .module-header .actions { bottom: 10px; right: 0;  }
+	
+.module.module-secondary > .module-header { background: #e8e8e8; }
+	.module.module-secondary > .module-header .heading { margin: 7px 8px; color: #676767; }
+	.module.module-secondary > .module-header .actions { right: 8px; bottom: 7px;}

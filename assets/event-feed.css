@@ -1,0 +1,33 @@
+/*=== New Event Feed ===*/
+.event-feed, 
+.event-item { width:100%; position: relative; margin-left:0; margin-right:0; float:left; }
+
+.event-item { padding-left: 40px; display: inline-block; padding-bottom: 10px; position: relative; }
+    .event-content { background:#E9E9E9; border:1px solid #dcdcdc; border-radius: 3px; }
+    .event-content .event-content-header,
+    .event-content .event-content-body { padding:10px; box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5) inset }
+
+    .event-content-header { border-bottom:1px solid #dcdcdc; position: relative; }
+        .event-content-header:before,
+        .event-content-header:after { border-bottom:18px solid transparent; border-right:10px solid; border-top:18px solid transparent; position: absolute; top:0; content:''; }
+        
+        .event-content-header:before { border-right-color:#e9e9e9; left:-10px; z-index: 2 }
+        .event-content-header:after { border-right-color:#dcdcdc ; left:-11px; }
+
+        .event-content-header .heading { margin-bottom: 1px;}
+        .event-content-header .sub-heading { color: #7f7f7f; margin-bottom:0;}
+
+    .event-content-body p:last-child { margin-bottom:0; }
+
+.event-item.has-icon .event-content-header,
+.event-item.has-icon .event-content-body { padding-left:30px; }
+
+.event-item.has-icon .event-content-header i { position: absolute; left:5px; top:5px; font-size:15px; }
+
+
+/* Timeline Left Bar */
+.event-item:before { content: ''; position: absolute; top: 5px; bottom: 0; border-left:2px dashed #e5e5e5; left: 10px;}
+.event-item:first-child:before {top:12px;}
+.event-item:last-child:before {height:16px;}
+
+.event-item .blob {position: absolute; border-radius: 10px; left:6px; padding: 5px; top:14px; background:#777;}

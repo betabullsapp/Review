@@ -1,0 +1,37 @@
+.circular-progressbar {
+	position: relative;
+	display: inline-block;
+}	
+
+/** Info **/
+.circular-progressbar .info{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+
+.circular-progressbar .info .count {
+	color: #195778;
+	font-size: 28px;
+	display: block;
+}
+.circular-progressbar .info .title  {
+	font-size: 12px;
+	color: #ccc;
+}
+
+/** Colors **/
+
+.circular-progressbar .bar-background {
+	stroke: #ccc;
+	fill: none;
+}
+.circular-progressbar .bar {
+	 stroke:#195778;
+	 fill: none;
+}

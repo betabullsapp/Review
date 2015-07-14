@@ -1,0 +1,152 @@
+/*
+*
+* Basic: Link
+*
+*/
+a { color:  #0077CC; }
+a:hover { color: #005c9d; }
+
+/*
+*
+* Basic: Buttons - Disabled Buttons
+*
+*/
+.btn-primary.disabled, 
+.btn-primary[disabled], 
+fieldset[disabled] .btn-primary, 
+.btn-primary.disabled:hover, 
+.btn-primary[disabled]:hover, 
+fieldset[disabled] .btn-primary:hover, 
+.btn-primary.disabled:focus, 
+.btn-primary[disabled]:focus, 
+fieldset[disabled] .btn-primary:focus, 
+.btn-primary.disabled:active, 
+.btn-primary[disabled]:active, 
+fieldset[disabled] .btn-primary:active, 
+.btn-primary.disabled.active, 
+.btn-primary[disabled].active, 
+fieldset[disabled] .btn-primary.active {
+	background-color: #bfbfbf; border-color: #7f7f7f; color: #888; opacity: 1; filter: aplha(opacity=100);
+}
+
+/*
+*
+* Typography
+*
+*/
+h1,h2,h3,h4,h5,h6 { margin-top: 0; }
+h1 { margin-bottom: 18px; }
+h2 { margin-bottom: 12px; }
+h3,h4 { margin-bottom: 6px; }
+
+/*
+*
+* Helper Classes
+*
+*/
+.zero-state {font-style: italic; color:#797979;}
+.visuallyhidden {position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0;}
+
+/*
+*
+* Lists - Unordered Lists
+*
+*/
+ul, 
+ol { padding: 0;}
+ul li,
+ol li { list-style-position: inside; }
+
+ul.default-list li, 
+ol.default-list li { margin-bottom: 5px; line-height: 1.2em; }
+ol.default-list li { list-style-type: decimal;  }
+ul.disc li { list-style-type: disc; }
+ul.circ li { list-style-type: circle; }
+
+/*
+*
+* Lists - Definition Lists
+*
+*/
+dl { margin-bottom: 15px;}
+	dt, dd {line-height: 1.3em; position: relative;}
+	dt {margin:15px 0 4px; font-weight: bold; color:#464646;}
+		dt:first-child {margin-top:0;}
+
+dl.separator dt {border-top:1px solid #e0e0e0; padding-top:12px;}
+	dl.separator dt:first-child {border-top: 0; padding-top:0;}
+
+/*
+*
+* Lists - List Group
+*
+*/
+.list-group-simple .list-group-item {background:none; border-left:0; border-right:0; padding-left:0; padding-right:0;}
+
+/*
+*
+* Lists - Invoice Lists
+*
+*/
+.invoice-list {padding:0; margin:0 0 15px;}
+	.invoice-list li {list-style: none; padding: 0; margin:0;}
+	.invoice-list .item {margin-bottom:4px; display: block;}
+		.invoice-list .item:after { content: "."; display: block;  height: 0;  clear: both; visibility: hidden;}/* Clearfix */
+
+	.invoice-list .name {float:left; width:60%;}
+	.invoice-list .price {float:right; width:35%; text-align: right;}
+
+	/* Sub-Item */
+	.invoice-list .sub.item {font-style: italic; color:#959595; font-size: 11px;}
+	.invoice-list .sub.item:last-child {margin-bottom:6px;}
+		.invoice-list .sub.item .name {padding-left:10px;}
+
+	/* Footers */
+	.invoice-list .footer {border-top:1px solid #ddd; padding:10px 0 5px; margin:0;}
+		.invoice-list .footer .item {text-align: right;}
+		.invoice-list .footer .item.total {font-weight: bold; font-size:14px;}
+
+/*
+*
+* Cards
+*
+*/
+
+
+.card-list {margin: 0; padding: 0; list-style-type: none;}
+
+.card {
+    margin: 2px 3px;
+    padding: 0 10px;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    line-height: 22px;
+    background-color: #f1f1f1;
+    color: #7f7f7f;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.card .yo-icon-close-x {
+    margin: 0 0 0 5px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    vertical-align: middle;
+    color: #7f7f7f;
+    font-family: 'yo-icons';
+    font-size: 9px;
+}
+
+.card .yo-icon-close-x:hover {text-decoration: none;}
+
+/*
+*
+* Panels 
+*
+*/
+.panel {box-shadow: 0;}
+.panel .panel-body p:last-child {margin-bottom:0;}

@@ -1,0 +1,10 @@
+/* Basic Pill */
+.nav-pills { margin: 10px 0; }
+	.nav-pills > li { margin: 0; }
+	.nav-pills > li > a { font-size: 12px; line-height: 14px;  border-radius: 5px; text-decoration: none; -webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; -ms-transition: all 0.1s ease-in; -o-transition: all 0.1s ease-in; transition: all 0.1s ease-in; }
+	.nav-pills > li + li { margin-left: 0; }
+
+	.nav-pills > li.disabled > a:hover,
+	.nav-pills > li.disabled > a:focus,
+	.nav-pills > li.dropdown.disabled > a:after { color: #bbb; cursor: default; }
+	.nav-pills > li.dropdown > a:after {content:'v'; font-family: 'yo-icons'; font-size:12px; line-height: 1; top:-1px; position: relative; margin-left:2px; color:#848484;}

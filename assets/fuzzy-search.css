@@ -1,0 +1,168 @@
+/** Fuzzy search wrapper **/
+.yo-fuzzy-search,
+.yo-fuzzy-search .tags {
+	border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	position: relative; 
+}
+.yo-fuzzy-search {
+	display: block;
+	border:1px solid #c8c8c8; 
+	
+}
+.yo-fuzzy-search.ng-invalid {
+	padding-bottom: 22px;
+	border: 1px solid #C63232;
+	background-color: #FDE7E4;
+}
+.yo-fuzzy-search,
+.yo-fuzzy-search:focus,
+.yo-fuzzy-search .host:focus {
+	outline: none;
+}
+
+.yo-fuzzy-search .host {
+	position: relative;
+}
+
+/** Fuzzy search tags **/
+.yo-fuzzy-search .tags {
+	width: 100%;
+	padding: 2px 4px;
+	overflow: hidden;
+	word-wrap: break-word;
+	cursor: text;
+	outline:none; 
+	color:#636363;
+	box-shadow: 0 0 5px rgba(0,0,0,.1) inset; 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.1) inset; 
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.1) inset; 
+	border: 1px solid rgba(255,255,255,0);
+	background-color: #fff;
+	z-index: 5;
+	max-height: 114px;
+	overflow-y: auto;
+}
+.yo-fuzzy-search .tags.focused {
+	outline: none;
+	border:1px solid #777;
+}
+.yo-fuzzy-search.ng-invalid .tags,
+.yo-fuzzy-search.ng-invalid .tags.focused {
+	border-color: transparent;
+	border-bottom: 1px solid #c63232;
+}
+/** Tags List **/
+.yo-fuzzy-search .tags .tag-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.yo-fuzzy-search .tags .tag-item {
+	margin: 2px 3px;
+	padding: 0 10px;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	line-height: 22px;
+	background-color: #f1f1f1;
+	color: #7f7f7f;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.yo-fuzzy-search .tags .tag-item.selected {
+	background: #ccc;
+}
+.yo-fuzzy-search .tags .tag-item .remove-button {
+	margin: 0 0 0 5px;
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+	vertical-align: middle;
+	color: #7f7f7f;
+	font-family: 'yo-icons';
+	font-size: 9px;
+}
+.yo-fuzzy-search .tags .tag-item .remove-button:hover {
+	text-decoration: none;
+}
+
+.yo-fuzzy-search .tags .input {
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	margin: 2px;
+	padding: 0;
+	float: left;
+	height: 22px;
+}
+.yo-fuzzy-search .tags .input.invalid-tag {
+	color: #C63232; 
+}
+.yo-fuzzy-search .tags .input::-ms-clear {
+	display: none;
+}
+
+.yo-fuzzy-search,
+.yo-fuzzy-search .tags,
+.yo-fuzzy-search .filedCaption {
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+}
+.yo-fuzzy-search .fieldCaption {
+	border-radius: 0 0 3px 3px;
+	position: absolute;
+	width: 100%;
+	color: #C63232;
+	font-size: 11px;
+	padding: 0 5px;
+	z-index: 4;
+	bottom: 0px;
+	margin-bottom: -20px;
+	opacity: 0;
+	visibility: hidden;
+}
+.yo-fuzzy-search.ng-invalid .fieldCaption {
+	opacity: 1;
+	visibility: visible;
+}
+
+.yo-fuzzy-search .autocomplete {
+	font-size: 12px;
+	margin-top: -2px;
+	padding: 4px 0;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #c8c8c8;
+	border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+}
+.yo-fuzzy-search .autocomplete .suggestion-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.yo-fuzzy-search .autocomplete .suggestion-item {
+	padding: 7px 10px;
+	line-height: 1.25em;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #636363;
+}
+.yo-fuzzy-search .autocomplete .suggestion-item.selected {
+	background-color: #edf7fd;
+}
+.yo-fuzzy-search .autocomplete .suggestion-item em {
+	font-style: normal;
+	font-weight: bold;g
+}

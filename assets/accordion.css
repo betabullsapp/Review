@@ -1,0 +1,23 @@
+/*=== Accordion Stylesheet ===*/
+
+.accordion {}
+	
+	/* Accordion Heading */
+	.accordion .accordion-group {border:1px solid #ccc; overflow: hidden; border-radius: 3px; margin-bottom: -1px; }
+		.accordion .accordion-group.active {overflow: visible;}
+		
+		.accordion .accordion-heading {}
+			.accordion .accordion-heading .accordion-toggle {display: block; padding:10px 10px 10px 30px; background: #f3f3f3; font-size:13px; text-decoration: none; color:#464646; font-weight:bold; position: relative; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+			.accordion .accordion-heading .accordion-toggle:hover {background:#EFEFF0;}
+			.accordion .active > .accordion-heading > .accordion-toggle {background:#E9E9E9;}
+
+		/* Icons */
+		.accordion .accordion-group > .accordion-heading > .accordion-toggle:before {content:'\25BA'; position: absolute; top:13px; left:10px; font-family: 'yo-icons'; font-size:13px; line-height: 1; margin-right:5px;}
+		.accordion .accordion-group.active > .accordion-heading > .accordion-toggle:before {content:'\25BC'; }
+
+
+		/* Accordion Content */
+		.accordion .accordion-content {height:0; position: relative; overflow:hidden; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+		.accordion .active > .accordion-content {height:auto; border-top:1px solid #ccc; overflow: visible;}
+			.accordion .accordion-content .accordion-inner {padding:10px; font-size:13px;}
+

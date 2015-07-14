@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'yo-icons';
+    src: url('icons/yo-icons.eot');
+    src: url('icons/yo-icons.eot?#iefix') format('embedded-opentype'),
+         url('icons/yo-icons.woff') format('woff'),
+         url('icons/yo-icons.ttf') format('truetype'),
+         url('icons/yo-icons.svg#SVGFont1Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.yo-icon-gear:before,
+.yo-icon-directions:before,
+.yo-icon-mail:before,
+.yo-icon-checkmark:before,
+.yo-icon-down-arrow:before,
+.yo-icon-chat:before,
+.yo-icon-other:before,
+.yo-icon-medical:before,
+.yo-icon-law:before,
+.yo-icon-home-imp:before,
+.yo-icon-auto:before,
+.yo-icon-up:before,
+.yo-icon-left:before,
+.yo-icon-right:before,
+.yo-icon-down:before,
+.yo-icon-progress:before,
+.yo-icon-star-e-alt:before,
+.yo-icon-star-e:before,
+.yo-icon-star-alt:before,
+.yo-icon-star:before,
+.yo-icon-search:before,
+.yo-icon-mobile-nav:before,
+.yo-icon-envelope:before,
+.yo-icon-phone:before,
+.yo-icon-datepicker:before,
+.yo-icon-download:before,
+.yo-icon-home:before,
+.yo-icon-close-x:before,
+.yo-icon-close-inv:before,
+.yo-icon-close:before,
+.yo-icon-add:before,
+.yo-icon-information:before,
+.yo-icon-error:before,
+.yo-icon-warning:before,
+.yo-icon-success-inv:before,
+.yo-icon-success:before,
+.yo-icon-question:before,
+.yo-icon-arrow-down:before,
+.yo-icon-arrow-up:before,
+.yo-icon-left-gate:before,
+.yo-icon-right-gate:before,
+.yo-icon-printer:before,
+.yo-icon-postcard:before,
+.yo-icon-documents:before,
+.yo-icon-gplus:before,
+.yo-icon-external-link,
+.yo-icon-file:before,
+.yo-icon-facebook:before,
+.yo-icon-tag:before,
+.yo-icon-carret-top:before,
+.yo-icon-lock:before,
+.yo-icon-unlock:before {speak: none; font-family: 'yo-icons'!important; font-style: normal!important; font-weight: normal!important;}
+
+.yo-icon-gear:before {content: "\0067"}
+.yo-icon-directions:before {content: "\0051"}
+.yo-icon-mail:before {content: "\0045"}
+.yo-icon-checkmark:before {content: "\0052"}
+.yo-icon-down-arrow:before {content: "\004A"}
+.yo-icon-chat:before {content: "\0071"}
+.yo-icon-other:before {content: "\004F"}
+.yo-icon-medical:before {content: "\004D"}
+.yo-icon-law:before {content: "\004C"}
+.yo-icon-home-imp:before {content: "\0068"}
+.yo-icon-auto:before {content: "\0041"}
+.yo-icon-up:before {content: "▲"}
+.yo-icon-left:before {content: "◄"}
+.yo-icon-right:before {content: "►"}
+.yo-icon-down:before {content: "▼"}
+.yo-icon-progress:before {content: "\006C"}
+.yo-icon-star-e-alt:before {content: "\005D"}
+.yo-icon-star-e:before {content: "\002D"}
+.yo-icon-star-alt:before {content: "\005B"}
+.yo-icon-star:before {content: "\002A"}
+.yo-icon-search:before {content: "\006D"}
+.yo-icon-mobile-nav:before {content: "≡"}
+.yo-icon-envelope:before {content: "✉"}
+.yo-icon-phone:before {content: "\0043"}
+.yo-icon-datepicker:before {content: "\0063"}
+.yo-icon-download:before {content: "\0064"}
+.yo-icon-home:before {content: "\0048"}
+.yo-icon-close-x:before {content: "\0072"}
+.yo-icon-close-inv:before {content: "\0058"}
+.yo-icon-close:before {content: "\0078"}
+.yo-icon-add:before {content: "\002B"}
+.yo-icon-information:before { content: "\0069";}
+.yo-icon-error:before {content: "\0065"}
+.yo-icon-warning:before {content: "\0021"}
+.yo-icon-success-inv:before {content: "\0053"}
+.yo-icon-success:before {content: "\0073"}
+.yo-icon-question:before {content: "\003f"}
+.yo-icon-arrow-down:before {content: "\0076"}
+.yo-icon-arrow-up:before {content: "\005e"}
+.yo-icon-right-gate:before {content: "\003e"}
+.yo-icon-left-gate:before {content:"\003C"}
+.yo-icon-printer:before {content: "\0070";}
+.yo-icon-documents:before {content: "\0044";}
+.yo-icon-file:before {content: "\0046";}
+.yo-icon-postcard:before {content: "\0050";}
+.yo-icon-external-link:before {content: "\0077";}
+.yo-icon-tag:before {content:"\0074";}
+.yo-icon-carret-top:before {content:"\005E";}
+.yo-icon-lock:before {content:"\004b";}
+.yo-icon-unlock:before {content:"\0055";}
+
+/* Social Icons */
+.yo-icon-facebook:before {content: "\0066";}
+.yo-icon-gplus:before {content: "\0047";}

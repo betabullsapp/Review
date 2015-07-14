@@ -1,0 +1,12 @@
+/*=== Status Messages ===*/
+.alert { margin-bottom: 15px; padding-left: 47px; position: relative; color:#464646; }
+	.alert .title { font-size:16px;  font-weight:bold; line-height:1em; display: block; margin-bottom:6px; }
+	.alert .content p {margin:0; line-height:18px;}
+	.alert:before { font-family:'yo-icons'; top:10px; left:12px; position: absolute; font-size:22px; line-height: 1; }
+
+	.alert-default { background: #ececec; border:1px solid #b9b9b9; padding-left: 10px;}
+
+	.alert.alert-info:before {content:'i'; color:#0F5B8D; }
+	.alert.alert-success:before {content:'s'; color:#7bb111; }
+	.alert.alert-warning:before {content:'!'; color:#d2c23a; }
+	.alert.alert-danger:before {content:'e'; color:#bb3222; }

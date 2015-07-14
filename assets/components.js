@@ -1,0 +1,40 @@
+define(
+    [
+        'bootstrap/components/yo-col',
+        'bootstrap/components/yo-theme',
+        'bootstrap/components/yo-scroll',
+        'bootstrap/components/accordion/js/yo-accordion',
+        'bootstrap/components/carousel/js/yo-carousel',
+        'bootstrap/components/carousel/js/tw-carousel',
+        'bootstrap/components/circular-progressbar/js/yo-circular-progressbar',
+        'bootstrap/components/form/js/yo-form',
+        'bootstrap/components/form/js/yo-validate',
+        'bootstrap/components/formatting/js/format-number-filter',
+        'bootstrap/components/formatting/js/abbreviate-filter',
+        'bootstrap/components/formatting/js/to-percent-filter',
+        'bootstrap/components/formatting/js/seconds-to-duration-filter',
+        'bootstrap/components/formatting/js/number-formatting',
+        'bootstrap/components/formatting/js/currency-filter',
+        'bootstrap/components/number-utils/number-utils',
+        'bootstrap/components/modal/js/yo-modal',
+        'bootstrap/components/navigation/js/yo-nav',
+        'bootstrap/components/tabs/js/yo-tab-group',
+        'bootstrap/components/tabs/js/yo-tab',
+        'bootstrap/components/table/js/yo-table',
+        'bootstrap/components/transition/js/tw-transition',
+        'bootstrap/components/information-tiles/js/yo-information-tiles',
+        'bootstrap/components/status-messages/js/yo-status-message',
+        'bootstrap/components/event-feed/js/yo-event-feed',
+        'bootstrap/components/pagination/js/paginate',
+        'bootstrap/components/star-ratings/js/yo-star-ratings',
+        'bootstrap/lib/plugins/css!bootstrap/components/information-tiles/css/information-tiles.css',
+        'bootstrap/components/wizard/js/yo-wizard',
+        'bootstrap/lib/plugins/css!bootstrap/components/icons/icons.css',
+        'bootstrap/lib/plugins/css!bootstrap/components/navigation/css/pills.css',
+        'bootstrap/lib/plugins/css!bootstrap/components/photo-grid/css/photo-grid.css',
+        'bootstrap/lib/plugins/css!bootstrap/components/modules/css/modules.css'
+    ],
+    function() {
+        // Components are being loaded here to ensure that the css required to load module.js get loaded first
+    }
+);

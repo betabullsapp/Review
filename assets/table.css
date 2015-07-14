@@ -1,0 +1,102 @@
+/*=== Tables ===*/
+
+.table .align-right { text-align: right; }
+.table .align-center { text-align: center; }
+.table .no-results {font-style:italic;}
+
+/* Table Head */
+.table > thead > tr > th { border-bottom-width: 1px ; background-color: #e0e0e0; color: #464646; padding-top: 9px; padding-bottom: 9px; vertical-align: middle;}
+
+/* Table Body */
+.table tbody tr,
+.table tbody td  {-webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; -ms-transition: all 0.1s ease-in; -o-transition: all 0.1s ease-in; transition: all 0.1s ease-in;}
+	.table tbody th {border-top: 1px solid #ddd; vertical-align: top; }
+	.table tbody td.negative { color:#b9301d;}
+
+	.table tbody tr.clickable:hover td,
+	.table tbody tr.clickable:hover th { cursor: pointer; }
+
+/* Table Footer */
+.table tfoot tr {background:none; border:none;}
+	.table tfoot td {background:#fff; border:1px solid #cccccc; font-weight:bold;}
+	.table tfoot td.tfoot-label {background:#f5f4f4; border:none; text-align:right; font-weight:normal;}
+
+/* Matrix Table */
+.table.matrix thead th:first-child {background:#f5f4f4; font-size: 1px; line-height: 0; color: #f5f4f4;}
+	.table.matrix tbody	td:first-child,
+	.table.matrix tbody	.th {font-weight: bold; vertical-align: middle; background:#d6d6d6; border: 1px solid #aaa; color: #464646; text-decoration: none;}
+
+/* Simplified Table */
+.table.table-simplified { background: none;}
+	.table.table-simplified > thead > tr > th, 
+	.table.table-simplified > tbody > tr > th, 
+	.table.table-simplified > tfoot > tr > th, 
+	.table.table-simplified > thead > tr > td, 
+	.table.table-simplified > tbody > tr > td, 
+	.table.table-simplified > tfoot > tr > td {
+		border: none;
+	}
+
+/* Table Sorting */
+table th[data-sort-type] a { display:block; float:left; color:#464646; cursor:pointer; position:relative; padding-right:12px; }
+
+	table th[data-sort-type] a:after,
+	table th[data-sort-type].sorted_desc a:after,
+	table th[data-sort-type].sorted_asc a:after { padding-left:5px; font-size:8px; position: absolute; right:0; top:6px; font-family: 'yo-icons'}
+	table th[data-sort-type].sorted_desc a:after { content:'\25BC';}
+	table th[data-sort-type].sorted_asc a:after { content:'\25B2';}
+
+
+/* Table Controls & Filters */
+.table thead th input[type='checkbox'], 
+.table thead th input[type='checkbox'][disabled] { margin-top: 0; }
+
+.table tbody td input[type='checkbox'], 
+.table tbody td input[type='checkbox'][disabled] {float:left; margin:3px 0 0;}
+
+.table-actions { padding: 10px 0; min-height:50px;}
+	.table-actions .form-group {margin-bottom:0;}
+
+.table-summary { text-align: center; padding: 10px; }
+	
+.table-filters { border: 1px solid #e3e3e3; display: table; width: 100%; }
+	.table-filters .filter-item { padding: 5px 10px; display: table-cell; vertical-align: middle;}
+	.table-filters .filter-item.float-right { text-align: right; }
+
+	.table-filters .filter-item .form-group {margin-bottom: 0;}
+	.table-filters .filter-item .form-group label {font-weight: normal; margin-right:5px; font-weight:13px;}
+	.table-filters .filter-item .form-group label, 
+	.table-filters .filter-item .form-group .yv-formfield {display:inline-block; vertical-align: middle;}
+	.table-filters .filter-item .form-group .yv-formfield {width:110px;}
+
+	.table-filters .filter-item .text,
+	.table-filters .filter-item .dropdown,
+	.table-filters .filter-item .pagination { display: inline-block; vertical-align: middle;}
+
+	.table-filters .filter-item .text { margin-right: 5px; }
+	.table-filters .filter-item .pagination { margin: 0; }
+
+	.table-filters .pagination-sm>li>a,
+	.table-filters .pagination-sm>li>span { padding: 5px 9px; }
+
+.table-filters + .table { margin-top:-1px; }
+	
+
+
+/* Comfy Table Styles */
+
+.table.comfy-table {display: table;}
+
+/* Table Head */
+.table.comfy-table .table-head {background-color: #e0e0e0; border-bottom-width: 1px; display: table-header-group;}
+.table.comfy-table .table-head .table-head-row, .table .table-body .table-body-row {width: 100%; display: table-row;}
+
+.table.comfy-table .table-head .table-head-row .cell {color: #464646; padding: 10px; vertical-align: middle; display: table-cell;}
+
+/* Table Body */
+.table.comfy-table .table-body {display: table-row-group;}
+
+.table.comfy-table .table-body .table-body-row,
+.table.comfy-table .table-body .table-body-row .cell  {-webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; -ms-transition: all 0.1s ease-in; -o-transition: all 0.1s ease-in; transition: all 0.1s ease-in;}
+.table.comfy-table .table-body .table-body-row .cell {padding: 10px; display: table-cell;}
+

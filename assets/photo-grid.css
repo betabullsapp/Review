@@ -1,0 +1,98 @@
+/*=== Media Grid === */
+
+#reorder-modal .yo-modal-body {padding-left:3px; padding-right:3px;}
+
+#reorder-modal .yo-modal-body > p {padding-left:13px;}
+
+#reorder-modal .form-footer {padding-right:13px;}
+
+#cloned_items {margin-left: 0; margin-right: 0; width: 100%; float: left; position: absolute;}
+
+#cloned_items li {position: absolute; list-style: none; z-index: 1; margin-bottom:20px; height: 136px;}
+
+.media-grid,
+.media-grid-reorder {position: relative; float:left;}
+
+.media-grid .media-item,
+.media-grid-reorder .media-item {list-style:none; display:block; margin-bottom:40px; height: 214px; position:relative;}
+	
+.media-grid-reorder .media-item {overflow:hidden;}
+
+.media-grid-reorder .media-item {margin-bottom:20px; height: 136px; cursor: move; z-index:5;}
+
+.media-grid-reorder .media-item.omega {margin-right:0;}
+
+.media-grid .media-item-wrapper,
+.media-grid-reorder .media-item-wrapper {overflow:hidden; width:100%; height:204px; margin-bottom:4px; position:relative; background: #e8e8e8;}
+
+.media-item a {display:block;}	
+
+.media-item .caption {display: block; width: 100%;}
+
+.media-grid-reorder .media-item img {cursor:move;}
+
+.media-item img {display:block; margin: 0 auto;}
+
+.media-item .action {position: absolute; left: 0px; bottom: 25px; width: 100%; text-align: center; z-index: 3;}
+
+.media-item .label {padding-top: 3px; text-align: center;}
+
+
+/*=== Overlay === */
+
+.media-item .image-overlay {width: 100%; height: 100%; position: absolute; overflow: hidden; top: 0; left: 0; background: #000; background:rgba(0, 0, 0, 0.6); padding: 10px 10px; visibility:hidden; opacity:0; -moz-transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
+
+.media-grid-reorder .media-item .image-overlay {height:auto; top:66px;}
+
+.media-item:hover .image-overlay {visibility:visible; opacity:1;}
+
+.ie7 .media-item .image-overlay {width: 195px; height: 160px;}
+
+.media-item .image-overlay .image-information {float:left; margin-top:25px; display:block; position:relative;}
+
+.media-item .image-overlay.small .image-information {margin-top:0;}
+
+.media-item .approved-master-name { line-height: 1.5em; }
+
+.media-grid-reorder .image-overlay .image-information {background: transparent url("images/reorderArrow.png") no-repeat 0 7px; padding-left:44px;}
+
+.media-grid-reorder .image-overlay .image-information p {margin-bottom:0; line-height:1.3em;}
+
+.media-item .image-overlay h4, .media-item .image-overlay p {color:#fff;}
+
+
+/****==== Photo Story ====****/
+
+.photo-story { margin-bottom:30px;	}
+	
+.photo-placeholder {text-align:center; background:#dedede url("images/gray-add-circle.png") 50% 88% no-repeat; border:2px dashed #b4b4b4; width:210px;}
+
+	.photo-placeholder .media-item-wrapper { padding:15px 15px 70px 15px; }	
+	.photo-placeholder .title {font-size:18px; color:#636363; line-height:1.3em; padding-bottom:4px; margin-bottom:2px;}
+	/*.photo-placeholder .small-title {
+        font-size:15px;
+        color:#636363;
+        line-height:1.3em;
+        padding-bottom:6px;
+        margin-bottom:6px;
+    }
+    .photo-placeholder .small-text {
+        font-size:11px;
+    }*/
+	.photo-placeholder a, .photo-placeholder a:hover { color:inherit; text-decoration:none; }
+    
+.embossed-border { border-bottom: 1px solid #eeeeee; position: relative; }
+.embossed-border:before {position: absolute;  display: block; content: ''; border-bottom: 1px solid #c7c7c7; height: 100%; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+.panel-head, .status-label {font-family: "Arial", sans-serif; font-weight: normal; font-style: normal; }
+.head-light {font-family: "Arial", sans-serif; font-weight: normal; font-style: normal;}
+
+
+
+/****==== Add Photo ====****/
+.media-item.add-photo .media-item-wrapper {border: 2px dashed #b4b4b4; padding: 10px; background: #dedede; text-align: center;}
+    .media-item.add-photo .media-item-wrapper:hover {text-decoration: none; border-color: #33abe2;}
+
+.media-item.add-photo .module > .module-header {border-bottom-color: #c7c7c7;}
+.media-item.add-photo .module-body {color: #636363}
+.media-item.add-photo .icon {font-size: 32px; color: #cccccc;}
